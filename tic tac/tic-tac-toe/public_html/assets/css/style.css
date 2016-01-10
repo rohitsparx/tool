@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+ul.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: -153px 0 0 -153px;
+    width: 306px;
+    overflow: hidden;
+    background: url('../images/board-1.png') no-repeat 2px 7px;
+    background-size: 100%;
+}
+
+ul.container li{
+    float: left; 
+    width: 100px;  
+    font-size: 30px; 
+    line-height: 100px; 
+    height: 100px; 
+    text-transform: uppercase; 
+    text-align: center; 
+    /*border: 1px solid #000;*/ 
+    font-weight: bold; 
+    cursor: pointer; 
+    background: none no-repeat center center;
+    background-size: 70%;
+    text-indent: -9999px;
+}
+
+ul.container li.ui-hover-X , ul.container li.ui-hover-O{opacity: 0.25;}
+
+ul.container li.ui-X , ul.container li.ui-hover-X:hover{
+    background-image: url('../images/cross-1.jpg');
+}
+
+ul.container li.ui-O , ul.container li.ui-hover-O:hover{
+    background-image: url('../images/circle-1.jpg');
+}
